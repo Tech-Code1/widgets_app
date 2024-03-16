@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:widgets_app/menu/menu_items.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -52,8 +53,10 @@ class _CustomListTitle extends StatelessWidget {
       title: Text(menuItem.title),
       subtitle: Text(menuItem.subtitle),
       onTap: () {
+
+        context.push(menuItem.link);
         
-       Navigator.pushNamed(context, menuItem.link);
+       // Navigator.pushNamed(context, menuItem.link);
 
       },
     );
