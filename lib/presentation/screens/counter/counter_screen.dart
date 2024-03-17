@@ -14,14 +14,10 @@ class CounterScreen extends ConsumerWidget {
 
     final TextStyle? textCounter = Theme.of(context).textTheme.displayLarge;
     final int clickCounter = ref.watch(counterProvider);
-    final bool darkMode = ref.watch(isDarkmodeProvider);
 
     return Scaffold(
       appBar: AppBar(
         title: const Text('Counter Screen'),
-        actions: [
-          
-        ],
       ),
       body: Center(
         child: Text('Valor: $clickCounter', style: textCounter),
