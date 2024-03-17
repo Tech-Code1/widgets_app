@@ -23,6 +23,12 @@ class MenuItem extends StatelessWidget {
 
 const appMenuItems = <MenuItem>[
   MenuItem(
+    title: 'Counter con Riverpod',
+    subtitle: 'Introducción a riverpod',
+    link: '/counter',
+    icon: Icons.numbers,
+  ),
+  MenuItem(
     title: 'Botones',
     subtitle: 'Varios botones en Flutter',
     link: '/buttons',
@@ -63,5 +69,17 @@ const appMenuItems = <MenuItem>[
     subtitle: 'Pequeño tutorial introductorio',
     link: '/tutorial',
     icon: Icons.accessibility_rounded,
+  ),
+  MenuItem(
+    title: 'InfiniteScroll y Pull',
+    subtitle: 'Vistas infinitas y pull to refresh',
+    link: '/infinite',
+    icon: Icons.list_alt_outlined,
+  ),
+  MenuItem(
+    title: 'Cambiar tema',
+    subtitle: 'Cambiar tema de la aplicación',
+    link: '/theme-change',
+    icon: Icons.color_lens_outlined,
   ),
 ];
